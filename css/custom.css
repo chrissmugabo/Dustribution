@@ -528,10 +528,31 @@ label {
   width: 100%;
   display: table-caption;
 }
+@media screen {
+  .badge[title="EXCLUSIVE"] {
+    color: #09c2de;
+    border-color: #6bdaeb;
+  }
+}
+.stick-row {
+  position: sticky;
+  bottom: 0px;
+  z-index: 90;
+  background: var(--base-color);
+}
+.stick-row:hover {
+  background: var(--base-color);
+}
+.stick-row .nk-tb-col,
+.stick-row .tb-amount {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
 @media print {
   @page {
     margin: 0;
-    margin-top: 30mm;
+    margin-top: 0mm;
   }
   body {
     margin: 0;
@@ -547,27 +568,31 @@ label {
     break-inside: avoid;
   }
   #report-container {
-    margin-top: -20mm;
+    /* margin-top: -20mm; */
+  }
+  .position-sticky,
+  .stick-row {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
   }
 
-  body {
+  /*body {
     width: 210mm;
     font-size: 18px;
   }
   body .sheet {
     width: 210mm;
-    /* height: 296mm; */
-    zoom: 2.3;
     height: 100%;
     overflow: visible;
     -moz-transform: scale(2.3);
     -moz-transform-origin: 0 0;
-  }
+  } */
   .sheet.padding-10mm {
     padding: 1mm;
   }
   .sheet.padding-15mm {
-    padding: 15mm;
+    padding: 0.5mm;
   }
   .sheet.padding-20mm {
     padding: 20mm;
@@ -586,8 +611,15 @@ label {
   .d-print-none,
   .nk-footer,
   .nk-header,
-  .nk-sidebar {
+  .nk-sidebar,
+  a.btn,
+  .nk-tb-col.nk-tb-col-check,
+  .nk-tb-col.nk-tb-col-tools {
     display: none !important;
+  }
+  .badge {
+    background: transparent !important;
+    border: unset !important;
   }
   .nk-sidebar + .nk-wrap,
   .nk-sidebar-overlay + .nk-wrap {
@@ -626,6 +658,23 @@ label {
   }
   tfoot {
     display: table-footer-group;
+  }
+  .nk-tb-item:not(.nk-tb-head) .nk-tb-col > *,
+  .nk-tb-item:not(.nk-tb-head) .nk-tb-col a {
+    color: #222 !important;
+  }
+  .nk-tb-item:not(.nk-tb-head) .nk-tb-col a {
+    text-decoration: none !important;
+  }
+  .nk-tb-item.nk-tb-head .sub-text {
+    font-weight: 700 !important;
+    color: var(--second-color) !important;
+  }
+  .invoice-bills {
+    font-size: 1.2rem;
+  }
+  body {
+    font-size: 1.3rem;
   }
 }
 .nk-menu-badge {
@@ -1122,4 +1171,9 @@ body.pg-auth {
 }
 .modal-dialog {
   margin-top: 0;
+}
+@media screen and (max-width: 992px) {
+  .nk-ecwg .amount {
+    font-size: 0.875rem;
+  }
 }
