@@ -1177,3 +1177,61 @@ body.pg-auth {
     font-size: 0.875rem;
   }
 }
+.options-container {
+  max-height: 6rem;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.options-container .item > a {
+  color: #222;
+}
+.options-container .item:hover,
+.options-container .item.active {
+  background-color: var(--base-color);
+  border-radius: 0.25rem;
+  color: #fff;
+}
+.options-container .item:hover > a {
+  color: #fff;
+}
+.zf-ac-toggler {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  top: 0;
+  color: #9596ad;
+  height: 100%;
+}
+.tame-vertical-container {
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fs-1 {
+  font-size: 2rem !important;
+}
+.fs-2 {
+  font-size: 1.75rem !important;
+}
+.fs-3 {
+  font-size: 1.5rem !important;
+}
+.fs-4 {
+  font-size: 1.25rem !important;
+}
+.fs-5 {
+  font-size: 1.15rem !important;
+}
+.fs-6 {
+  font-size: 1rem !important;
+}
+textarea.form-control {
+  min-height: unset;
+  height: auto;
+}
+.form-control[readonly] {
+  background-color: transparent;
+}
