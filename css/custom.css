@@ -1179,8 +1179,8 @@ body.pg-auth {
 }
 .options-container {
   max-height: 6rem;
-  overflow: auto;
-  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .options-container .item > a {
   color: #222;
