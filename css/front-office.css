@@ -1,0 +1,229 @@
+body {
+  max-height: 100vh !important;
+}
+:root {
+  --swiper-navigation-size: 20px !important;
+}
+.menu-text,
+.menu-text:hover,
+.pos-link,
+.pos-link:hover {
+  text-decoration: none;
+  color: #888;
+}
+
+.food-group.active {
+  color: #038edc;
+  background-color: rgba(3, 142, 220, 0.1);
+}
+.food-group.active h6 {
+  color: #038edc;
+}
+.menu-carousel-item img {
+  margin: auto;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  font-weight: bolder;
+}
+.items-list {
+  position: relative;
+  height: calc(100vh - 13rem);
+  overflow-y: auto;
+  overflow-x: hidden !important;
+}
+.cart-container {
+  min-height: calc(100vh - 3.5rem);
+  height: calc(100vh - 3.5rem);
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.added-item {
+  background: #f9fafc;
+  border-color: #25476a !important;
+}
+.listpage-content figure {
+  margin: 0;
+}
+.listpage-content img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.listpage-content {
+  width: 100%;
+}
+.listpage-items {
+  padding-right: 0 !important;
+  padding-left: 0;
+}
+@media (max-width: 767px) {
+  .listpage-items {
+    padding: 0 0 20px 0;
+  }
+}
+
+.magic-warpper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.magic-warpper:after {
+  content: "";
+  flex-grow: 999999999;
+}
+.magic-warpper a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+}
+.magic-warpper a:hover {
+  opacity: 1 !important;
+}
+.magic-warpper * {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.magic-warpper .mosaic-asset {
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+.magic-warpper .mosaic-asset img.magic-item {
+  width: 100%;
+  vertical-align: bottom;
+}
+.magic-warpper .mosaic-asset a {
+  display: block;
+}
+body .cls-img-only {
+  height: auto !important;
+}
+.magic-warpper .photos-counts {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 38px;
+  justify-content: flex-end;
+  margin-right: 5px;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  width: calc(100% - 17px);
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .magic-warpper .photos-counts {
+    right: 0.75em;
+    top: 0.75em;
+  }
+}
+.magic-warpper .photos-counts:hover {
+  text-decoration: none;
+}
+.magic-warpper .photos-counts-link {
+  align-items: center;
+  background-color: rgba(8, 8, 8, 0.4);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  height: 1.25em;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  max-width: 100px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-overflow: ellipsis;
+  transition: height 0.1s ease;
+}
+.magic-warpper .photos-counts-link:hover {
+  text-decoration: none;
+}
+.magic-warpper .photos-counts-link path {
+  fill: #fff;
+}
+.magic-warpper .photos-counts-link {
+  background-color: rgba(8, 8, 8, 0.8);
+  height: 1.88em;
+}
+.magic-warpper .photos-counts-link:hover {
+  background-color: #fff;
+  color: #080808;
+  text-decoration: none;
+}
+.magic-warpper .photos-counts-link:hover path {
+  fill: #080808;
+}
+.magic-warpper .counts-container {
+  font-size: 1.2rem;
+  margin-left: 0.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.figcaption-overlay {
+  bottom: 1rem;
+  font-size: 1.5rem;
+  left: 0;
+  line-height: 1.4;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+  z-index: 5;
+  font-weight: 700;
+  color: #fff;
+}
+.figcaption-date {
+  display: block;
+  font-size: 1em;
+}
+.locked-table {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.cross-icon {
+  display: none;
+}
+.locked-table:not(.selected-table) .check-icon {
+  display: none !important;
+}
+.locked-table:not(.selected-table) .cross-icon {
+  display: block !important;
+}
+.tables-list{
+  max-height: 65vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+@media screen and (min-width: 640px) {
+  .magic-warpper .mosaic-asset:before {
+    background: linear-gradient(180deg, transparent 0, rgba(8, 8, 8, 0.6));
+  }
+}
+.magic-warpper .mosaic-asset:before {
+  bottom: 0;
+  height: 40%;
+  z-index: 1;
+}
+.order-card .item {
+  font-size: 0.875rem;
+  color: #222;
+  font-weight: 500;
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .mn--min .mainnav {
+    max-width: 4.5rem;
+  }
+}
