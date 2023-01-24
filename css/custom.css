@@ -703,3 +703,194 @@ ul {
   background-clip: padding-box !important;
   border: 1px solid rgba(0, 0, 0, 0.07) !important;
 }
+.selected-option {
+  z-index: 1;
+  color: #75868f;
+  text-decoration: none;
+  background-color: #f2f4f8;
+}
+.receipt {
+  position: fixed;
+  bottom: 0;
+  z-index: 1050;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 100%;
+  visibility: hidden;
+  background-color: #fff;
+  background-clip: padding-box;
+  outline: 0;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .receipt {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.receipt-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+.receipt-header .btn-close {
+  padding: 0.5rem 0.5rem;
+  margin-top: -0.5rem;
+  margin-right: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+.receipt-title {
+  margin-bottom: 0;
+  color: #fff;
+}
+.receipt-body {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 1rem 1rem;
+  overflow-y: auto;
+}
+
+.receipt-end {
+  top: 0;
+  right: 0;
+  width: 280px;
+  border-left: 1px solid #f1f5f7;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.show-receipt {
+  transform: translateX(0%);
+}
+.crud-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.crud-display {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.crud-display.empty {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  min-width: 70px;
+}
+[hidden] {
+  display: none;
+}
+.crud-create {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0;
+  -moz-box-flex: 1;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
+  padding: 20px;
+}
+.btn-back {
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom, #f5f5f5, #f1f1f1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: content-box;
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  height: 27px;
+  line-height: 27px;
+  margin-left: 0;
+  margin-right: 16px;
+  min-width: 54px;
+  outline: 0;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  transition: all 0.218s;
+  white-space: nowrap;
+  vertical-align: middle;
+  z-index: 1;
+}
+.crud-back {
+  height: 24px;
+  margin: 10px 0 -24px;
+  min-width: 24px;
+  padding: 3px 4px;
+  position: absolute;
+  top: 85px;
+  width: 24px;
+  line-height: 1;
+  left: 36px;
+}
+
+.crud-display-line {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-top: 40px;
+  width: 70px;
+}
+
+.crud-display-line .crud-links {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 600px;
+  min-width: 200px;
+  position: relative;
+  margin-left: 35px;
+  padding-left: 34px;
+  border-left: 1px solid #ccc;
+}
+.required::after {
+  color: red;
+  content: "*";
+}
