@@ -1099,8 +1099,8 @@ textarea.form-control {
   padding: 2px 4px;
 }
 .nk-content .multiselect__tags {
-  min-height: 34px;
-  padding: 5px 0.5rem 0 8px;
+  min-height: 38px;
+  /* padding: 5px 0.5rem 0 8px; */
   border-radius: 3px;
 }
 .nk-content .multiselect__option {
@@ -1242,4 +1242,12 @@ textarea.form-control {
 }
 .link-list-opt a {
   padding: 0.425rem 0.635rem;
+}
+.required::after {
+  color: red;
+  content: "*";
+}
+
+.bulk-options {
+  width: 160px;
 }
