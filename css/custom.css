@@ -1251,3 +1251,6 @@ textarea.form-control {
 .bulk-options {
   width: 160px;
 }
+.nk-sale-data .amount {
+  font-size: 1.25rem;
+}
