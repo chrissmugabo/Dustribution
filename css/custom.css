@@ -1300,3 +1300,11 @@ textarea.form-control {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
+input:hover,
+input:focus,
+*:focus,
+*:active,
+*:hover {
+  outline: 0 !important;
+  box-shadow: unset !important;
+}
