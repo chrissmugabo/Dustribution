@@ -1095,13 +1095,17 @@ textarea.form-control {
 }
 .nk-content .multiselect__select {
   width: 32px;
-  height: 30px;
-  padding: 2px 4px;
+  height: 32px;
+  padding: 1px 4px;
 }
 .nk-content .multiselect__tags {
-  min-height: 38px;
-  padding: 5px 8px;
+  min-height: 36px;
+  padding: 3px 8px;
   border-radius: 6px;
+}
+.nk-content .multiselect__input, .nk-content .multiselect__single {
+  vertical-align: middle;
+  line-height: 20px;
 }
 .nk-content .multiselect__option {
   min-height: 34px;
@@ -1135,7 +1139,7 @@ textarea.form-control {
   font-size: 1em;
 }
 .input-group-text {
-  padding: 0.375rem 1rem;
+  padding: 0.375rem 0.325rem;
 }
 h1,
 h2,
@@ -1307,4 +1311,215 @@ input:focus,
 *:hover {
   outline: 0 !important;
   box-shadow: unset !important;
+}
+/** Bulk Table */
+.bulf-form-container,
+.bulf-form-container > * {
+  outline: 0 !important;
+}
+
+.bulf-form-container {
+  height: calc(100% -63px -57px);
+  width: 100%;
+}
+
+.table-form {
+  border-bottom: 1px solid #ececf9;
+  word-wrap: break-word;
+  table-layout: fixed;
+}
+
+.table-form thead {
+  font-size: 0.8125rem;
+  text-transform: capitalize;
+}
+.table thead {
+  color: #050505;
+  background-color: #ddd;
+  font-weight: bold;
+}
+.table-form.table thead:first-child > tr > th {
+  font-weight: bold;
+  border-top: 1px solid #ececf9;
+  border-bottom: 1px solid #ececf9;
+  background-color: #ddd;
+  text-transform: capitalize;
+}
+
+.table-form.table thead th {
+  vertical-align: bottom;
+}
+
+.thead-sticky th {
+  position: sticky;
+  top: -1px;
+  z-index: 1;
+}
+
+.thead-sticky th::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #ececf9;
+}
+
+.sheet-view td {
+  padding: 0 0.5rem !important;
+  border-top: 2px solid #ececf9;
+}
+
+.sheet-view td:not(:last-child) {
+  border-right: 1px solid #ececf9;
+}
+
+.sheet-view .sheet-field.form-control,
+.sheet-view .ac-select.form-control,
+.currency-with-amount > .form-control {
+  height: 42px;
+  border-color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+.sheet-view .sheet-field.form-control:active {
+  box-shadow: none;
+  border-color: #408dfb;
+}
+
+.ac-box {
+  position: relative;
+  display: block;
+  zoom: 1;
+  vertical-align: middle;
+}
+
+.sheet-view .sheet-field .ac-box .ac-select {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0, 75rem;
+  line-height: 1.5;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+  background-clip: padding-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.ac-box .ac-select span {
+  display: block;
+  overflow: hidden;
+  margin-right: 26px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ac-box .ac-select div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 18px;
+  height: 100%;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.sheet-field .currency-with-amount {
+  display: table;
+  width: 100%;
+}
+
+.currency-with-amount > .currency-field {
+  width: 68px;
+  max-width: 80px;
+  font-weight: bold;
+}
+
+.currency-with-amount > .form-control,
+.currency-with-amount > .currency-field {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.loader-container {
+  min-height: 100% !important;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.lds-ellipsis div {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bs-dark);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.sticky-table {
+  position: sticky;
+  top: 60px;
+  background: var(--base-color);
+  z-index: 90;
+}
+.nk-tb-head.sticky-table .nk-tb-col,
+.nk-tb-head.sticky-table .sub-text {
+  color: #fff;
+  font-weight: bolder;
 }
