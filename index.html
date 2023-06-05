@@ -3,7 +3,7 @@
         new Date()
           .toLocaleString("fr-CA", { timeZone: "Africa/Kigali" })
           .slice(0, 10);
-      window.TIMEZONE = localStorage.getItem("_tz") || "Africa/Kigali";</script><link href="/css/mainChuck.cea97cb4.css" rel="prefetch"><link href="/js/mainChuck.7a578786.js" rel="prefetch"><link href="/css/chunk-vendors.3f87b7f5.css" rel="preload" as="style"><link href="/css/index.f189e25d.css" rel="preload" as="style"><link href="/js/chunk-vendors.cd4c5efe.js" rel="preload" as="script"><link href="/js/index.75835d0a.js" rel="preload" as="script"><link href="/css/chunk-vendors.3f87b7f5.css" rel="stylesheet"><link href="/css/index.f189e25d.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#4DBA87"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="tame-apps"><link rel="apple-touch-icon" href="/img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="/img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head><body class="nk-body bg-white npc-general has-sidebar no-touch nk-nio-theme"><noscript><strong>We're sorry but This App doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>window.onload = () => {
+      window.TIMEZONE = localStorage.getItem("_tz") || "Africa/Kigali";</script><link href="/css/mainChuck.3e689c6f.css" rel="prefetch"><link href="/js/mainChuck.3cda6cb7.js" rel="prefetch"><link href="/css/chunk-vendors.3f87b7f5.css" rel="preload" as="style"><link href="/css/index.a7fce029.css" rel="preload" as="style"><link href="/js/chunk-vendors.cd4c5efe.js" rel="preload" as="script"><link href="/js/index.3420987f.js" rel="preload" as="script"><link href="/css/chunk-vendors.3f87b7f5.css" rel="stylesheet"><link href="/css/index.a7fce029.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#4DBA87"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="tame-apps"><link rel="apple-touch-icon" href="/img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="/img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head><body class="nk-body bg-white npc-general has-sidebar no-touch nk-nio-theme"><noscript><strong>We're sorry but This App doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>window.onload = () => {
         /*[...document.querySelectorAll("[data-target='sidebarMenu']")].forEach(
           (i) => {
             i.addEventListener("click", () => {
@@ -44,11 +44,18 @@
               li = item.parentElement;
             else li = item.parentElement.parentElement;
             li.classList.toggle("show");
-            li.querySelector("div.dropdown-menu").classList.toggle("show");
+            //li.querySelector("div.dropdown-menu").classList.toggle("show");
+            const menu = li.querySelector("div.dropdown-menu");
+            if (menu) {
+              menu.classList.toggle("show");
+            }
           } else if (item.closest(".dropdown-toggle")) {
             var li = item.parentElement;
             li.classList.toggle("show");
-            li.querySelector("div.dropdown-menu").classList.toggle("show");
+            const menu = li.querySelector("div.dropdown-menu");
+            if (menu) {
+              menu.classList.toggle("show");
+            }
           } else {
             var isFilterElement = false;
             var elem = e.target;
@@ -77,4 +84,4 @@
             }
           }
         });
-      };</script><script src="/js/chunk-vendors.cd4c5efe.js"></script><script src="/js/index.75835d0a.js"></script></body></html>
+      };</script><script src="/js/chunk-vendors.cd4c5efe.js"></script><script src="/js/index.3420987f.js"></script></body></html>

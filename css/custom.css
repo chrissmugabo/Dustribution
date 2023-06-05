@@ -1103,7 +1103,8 @@ textarea.form-control {
   padding: 3px 8px;
   border-radius: 6px;
 }
-.nk-content .multiselect__input, .nk-content .multiselect__single {
+.nk-content .multiselect__input,
+.nk-content .multiselect__single {
   vertical-align: middle;
   line-height: 20px;
 }
@@ -1522,4 +1523,30 @@ input:focus,
 .nk-tb-head.sticky-table .sub-text {
   color: #fff;
   font-weight: bolder;
+}
+
+.new-tag::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  height: 90%;
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  -webkit-box-shadow: 0 0 4px 2px #fff;
+  box-shadow: 0 0 4px 2px #fff;
+  -webkit-animation: moveRightToLeft 5s ease-in-out infinite;
+  animation: moveRightToLeft 5s ease-in-out infinite;
+}
+
+svg.icon.fill-bluish-grey {
+  fill: #838195;
+}
+svg.icon.icon-sm,
+.sms-custom-editor svg.icon.sms-info {
+  height: 14px;
+  width: 14px;
+}
+.font-xxs {
+  font-size: 12px !important;
 }
