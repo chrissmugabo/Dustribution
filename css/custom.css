@@ -190,3 +190,6 @@
   border-bottom-color: rgba(0, 0, 0, 0.2);
   content: "";
 }
+/* .nk-header-fixed + .nk-content {
+  z-index: -1;
+} */
