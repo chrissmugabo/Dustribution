@@ -190,6 +190,15 @@
   border-bottom-color: rgba(0, 0, 0, 0.2);
   content: "";
 }
+strong {
+  font-weight: 900;
+}
+.nk-block-head,
+.nk-block-head-sm {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+}
 /* .nk-header-fixed + .nk-content {
   z-index: -1;
 } */
