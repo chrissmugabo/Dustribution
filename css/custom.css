@@ -196,8 +196,8 @@ strong {
 .nk-block-head,
 .nk-block-head-sm {
   border-bottom: 1px solid #ccc;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.25rem !important;
 }
 /* .nk-header-fixed + .nk-content {
   z-index: -1;
