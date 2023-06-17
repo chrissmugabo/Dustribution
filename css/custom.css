@@ -198,7 +198,15 @@ strong {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.5rem !important;
   margin-bottom: 1.25rem !important;
+  position: sticky;
+  top: 70px;
+  background: #fff;
+  padding-top: 0.5rem;
+  z-index: 9999;
 }
 /* .nk-header-fixed + .nk-content {
   z-index: -1;
 } */
+.multiselect__tag {
+  background: var(--base-color) !important;
+}
