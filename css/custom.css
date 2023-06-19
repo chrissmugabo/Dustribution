@@ -236,7 +236,7 @@ strong {
   left: 66.66%;
   width: 33.33%;
   height: 4px;
-  background-color: var(--base-color)
+  background-color: var(--base-color);
 }
 
 @media print {
@@ -247,4 +247,7 @@ strong {
   .company-details {
     display: block !important;
   }
+}
+.nk-ecwg .amount {
+  font-size: 1.08rem;
 }
