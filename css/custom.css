@@ -1359,6 +1359,45 @@ small {
   font-size: 0.85625rem;
   font-weight: normal;
 }
-#print-container {
+#print-container,
+.bill-container {
   font-family: "Courier New", Courier, monospace;
+}
+.company-details {
+  display: none;
+}
+.company-details .line {
+  position: relative;
+  height: 4px;
+  background-color: var(--base-color);
+}
+
+.company-details .line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 33.33%;
+  width: 33.33%;
+  height: 4px;
+  background-color: var(--second-color);
+}
+
+.company-details .line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 66.66%;
+  width: 33.33%;
+  height: 4px;
+  background-color: var(--base-color);
+}
+
+@media print {
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .company-details {
+    display: block !important;
+  }
 }

@@ -118,12 +118,12 @@
     padding: 1rem 1rem;
     overflow-y: auto;
   }
-  #print-container {
+  #print-container, .bill-container {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-  #print-container {
+  #print-container, .bill-container {
     display: block !important;
   }
 
