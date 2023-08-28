@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.1b0d90da12eb6146fb4b2795aea6faea.js"
+  "/precache-manifest.f05d0ad1c44657ac9ed8608ffa96d81c.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "tame-apps"});
