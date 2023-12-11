@@ -1527,3 +1527,11 @@ small {
 .v-dropdown li {
   transform: rotate(180deg);
 }
+._2deea771 {
+  animation: rotator 1s linear infinite;
+}
+@keyframes rotator {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -273,3 +273,6 @@
     text-decoration: none !important;
   }
 }
+.d-block {
+  display: block!important;
+}
