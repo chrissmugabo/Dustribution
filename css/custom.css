@@ -421,7 +421,7 @@ ul.ranges {
   padding: 0.5rem;
   margin: 0;
   font-size: 0.75rem;
-  color: #75868f;
+  color: #495057;
   text-align: left;
   list-style: none;
   margin: 0 !important;
@@ -706,7 +706,7 @@ ul {
 }
 .selected-option {
   z-index: 1;
-  color: #75868f;
+  color: #495057;
   text-decoration: none;
   background-color: #f2f4f8;
 }
