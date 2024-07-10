@@ -1535,3 +1535,11 @@ small {
     transform: rotate(360deg);
   }
 }
+
+.form-control {
+  font-size: 0.875rem;
+}
+
+.border-start-yellow {
+  border-left: 3px solid var(--amazon-yellow) !important;
+}
