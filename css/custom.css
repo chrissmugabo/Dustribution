@@ -1535,11 +1535,35 @@ small {
     transform: rotate(360deg);
   }
 }
-
 .form-control {
   font-size: 0.875rem;
 }
-
 .border-start-yellow {
   border-left: 3px solid var(--amazon-yellow) !important;
+}
+
+.vibrating-dot {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+  animation: vibrate 0.5s infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(2px, -2px);
+  }
+  50% {
+    transform: translate(-2px, 2px);
+  }
+  75% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
